@@ -1,0 +1,15 @@
+.statistics {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: aliceblue;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.item {
+    display: flex;
+    list-style: none;
+    font-weight:bold;
+}
