@@ -2,10 +2,9 @@ import PropTypes from 'prop-types';
 import styles from './Statistics.module.css'
 
 export const Statistics = ({ title, stats }) => {
-  if (title) {
     return (
       <section className={styles.statistics}>
-        <h2 className="title">{title}</h2>
+        {title && (<h2 className="title">{title}</h2>)}
         <div className={styles.item}>
         {stats.map(stat => {
           return (
@@ -21,7 +20,6 @@ export const Statistics = ({ title, stats }) => {
         </div>
       </section>
     );
-  }
 };
 
 function randomColor() {
